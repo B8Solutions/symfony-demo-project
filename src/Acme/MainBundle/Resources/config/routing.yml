@@ -1,0 +1,7 @@
+homepage:
+    path:     /
+    defaults: { _controller: AcmeMainBundle:Blog:index }
+
+view_post:
+    path:     /post
+    defaults: { _controller: AcmeMainBundle:Blog:show }

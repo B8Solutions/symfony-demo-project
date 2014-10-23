@@ -22,5 +22,52 @@
                 <li class="next"><a href="#">Newer &rarr;</a></li>
             </ul>
         </div>
+
+        <div class="col-sm-12">
+            <h2>Comments</h2>
+
+            <ul class="list-unstyled">
+                <li>
+                    <div class="alert alert-info">No comments have been posted yet.</div>
+                </li>
+            </ul>
+
+            <hr>
+
+            <h3>Add comment</h3>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="inputName3" class="col-sm-2 control-label">Name <span class="text-danger">*</span></label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputName3" placeholder="Name">
+                        <span class="help-block">Your full name.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email <span class="text-danger">*</span></label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        <span class="help-block">Must be a valid email address. Will <strong>not be displayed</strong> publicly.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comment" class="col-sm-2 control-label">Comment <span class="text-danger">*</span></label>
+                    <div class="col-sm-10">
+                        <textarea name="comment" id="comment" class="form-control" rows="8" cols="40" placeholder="Comment..."></textarea>
+                        <span class="help-block">HTML <em>will not be rendered</em> in your comment. Minimum 10 characters.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <span class="text-danger">*</span> Indicates a required field.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Submit Comment</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 {% endblock %}
